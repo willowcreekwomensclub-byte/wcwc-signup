@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>WCWC membership result</title></head>
+<body>
+<p>Returning to the WCWC welcome page…</p>
+<script>
+  // Values are JSON-encoded and HTML-sensitive characters escaped in Code.gs.
+  // Apps Script nests its sandbox inside the hidden Pages frame; top is Pages.
+  window.top.postMessage(<?!= payload ?>, <?!= targetOrigin ?>);
+</script>
+</body>
+</html>
